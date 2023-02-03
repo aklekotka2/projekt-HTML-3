@@ -45,7 +45,6 @@ h2 {
 h3 {
 	font-size: 2.4rem;
 	color: var(--navy);
-	/* margin-bottom: 40px; */
 	font-weight: 400;
 	line-height: 125%;
 }
@@ -55,10 +54,8 @@ button {
 	border: 0;
 	font-weight: 600;
 	font-size: 1.6rem;
-	line-height: 100%;
 	font-family: var(--inter);
 	background: transparent;
-	border: 0;
 }
 button > a {
 	text-decoration: none;
@@ -116,13 +113,12 @@ button.color > a {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	align-items: center;
-	/* border: 1px solid red; */
 }
 /* *** HEADER *** */
 header {
 	color: var(--gray);
 	height: auto;
-	padding: 62px 0;
+	padding: 62px 0 92px 0;
 }
 .logo {
 	grid-column: 1/2;
@@ -131,7 +127,6 @@ header {
 /* *** NAV *** */
 nav {
 	grid-column: 2/7;
-	/* align-self: center; */
 }
 nav a {
 	padding: 0 20px;
@@ -148,10 +143,14 @@ header button {
 	justify-self: end;
 }
 /* *** HERO *** */
+.hero {
+	min-height: calc(100vh - 62px - 35px - 92px);
+}
 .hero-wrapper {
 	grid-column: 1/8;
 	position: relative;
-	height: calc(100vh - 450px);
+	height: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -180,8 +179,12 @@ h1 {
 }
 .hero-wrapper > button {
 	background: var(--violet);
+	margin-bottom: 100px;
 }
 /* *** ABOUT *** */
+.about {
+	height: auto;
+}
 .about-wrapper {
 	grid-column: 1/-1;
 	background: rgba(240, 99, 184, 0.15);
@@ -221,8 +224,6 @@ h1 {
 .box {
 	height: 358px;
 	width: 100%;
-	/* padding: 0 0 0 35px; */
-	/* border: 1px solid blue; */
 }
 .info-wrapper {
 	position: relative;
@@ -266,7 +267,6 @@ h1 {
 	margin: 20px 0;
 	height: 160px;
 	line-height: 160%;
-	/* border: 1px solid red; */
 	position: relative;
 	z-index: 5;
 }
@@ -277,7 +277,6 @@ h1 {
 /* *** TESTIMONIALS *** */
 .testimonials-wrapper {
 	grid-column: 1/-1;
-	/* width: 100%; */
 	height: 710px;
 	background: var(--violet);
 	border-radius: 50px;
@@ -378,7 +377,6 @@ h1 {
 .slides-arrows {
 	width: 100px;
 	display: flex;
-	/* gap: 20px; */
 	justify-content: space-around;
 	align-items: center;
 }
@@ -515,7 +513,6 @@ ul.social-list li {
 	align-items: center;
 }
 ul.social-list i {
-	/* font-size: 1rem; */
 	color: var(--white);
 }
 .fa-facebook-f {
